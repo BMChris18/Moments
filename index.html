@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💖 UN PEQUEÑO VIAJE ENTRE LOS MOMENTOS QUE ME REGALASTE 💖</h1>
+        <img src="valentine.jpg" alt="San Valentín">
+        <div id="quiz">
+            <div class="question" id="question1">
+                <p>¿Estás lista para tomar mi mano en este pequeño viaje y no soltarlo?</p>
+                <button onclick="nextQuestion(true, 'question2')">💘 Si, amor</button>
+                <button onclick="nextQuestion(false, 'question1')">🌹 No lo sé </button>
+                <button onclick="nextQuestion(true, 'question100')">🌻 21 de marzo</button>
+            </div>
+
+            <div class="question" id="question2" style="display: none;">
+                <img src="question2.jpg" alt="Pregunta 2">
+                <p>¿Recuerdas esta foto?... aunque no lo sepas, fue la primera vez que alguien logró sacarme una foto y me sentí muy cómodo a tu lado 💖💖 </p>
+                <button onclick="nextQuestion(false, 'question1')">🎃 No</button>
+                <button onclick="nextQuestion(true, 'question3')">💖 Si</button>
+            </div>
+
+            <div class="question" id="question3" style="display: none;">
+                <img src="question3.jpg" alt="Pregunta 3">
+                <p>¿Recuerdas la canción con la que te dí el primer beso?... ese día me sentí como un niño lleno de inocencia y amor, lograste borrar mis heridas por eso elijo amarte cada día.</p>
+                <button onclick="nextQuestion(false, 'question1')">🌹 Cae el son - Airbag</button>
+                <button onclick="nextQuestion(true, 'question4')">🌻 The Reason - Hoobastank</button>
+            </div>
+            <div class="question" id="question4" style="display: none;">
+                <img src="question4.jpg" alt="Pregunta 4">
+                <p>Este es uno de mis días favoritos, porque ahí me hiciste sentir que un par de horas a tu lado es suficiente para borrar años de soledad ❤️ ¿Recuerdas el lugar? </p>
+                <button onclick="nextQuestion(true, 'question5')">❤️ Taikiry (lugar donde tomamos cocteles) </button>
+                <button onclick="nextQuestion(false, 'question1')">💚 Mister cafe (nuestra cafetería) </button>
+            </div>
+            <div class="question" id="question5" style="display: none;">
+                <img src="question5.jpg" alt="Pregunta 5">
+                <p>Luegos están esos momentos que tomas mi mano y puedo sentirte como la persona que estará a mi lado, son de esos momentos que me gustan porque lo haces sin que yo te lo pida. ¿Puedes saber cuál es mi favorito? lo pondré fácil ¿Navidad o Lampa? </p>
+                <button onclick="nextQuestion(true, 'question6')">❤️ Navidad</button>
+                <button onclick="nextQuestion(false, 'question1')">❤️ Lampa</button>
+            </div>
+            <div class="question" id="question6" style="display: none;">
+                <img src="question6.jpg" alt="Pregunta 6">
+                <p>Hablando de navidad, ese día me recordaste como se siente compartir con alguien esos momentos sin preocuparse por los demas, solo tu, yo y.... ¿recuerdas quién era la sorpresa?</p>
+                <button onclick="nextQuestion(false, 'question1')"> No hubo sorpresa 😞 </button>
+                <button onclick="nextQuestion(true, 'question7')"> CAPIBARAAAA 😁 </button>
+            </div>
+            <div class="question" id="question7" style="display: none;">
+                <img src="question7.jpg" alt="Pregunta 7">
+                <p>¿Conoces esta película?... para mi llegaste como Eva para Wall-e, yo era un ser solo inmerso en sus cosas hasta que llegaste tu (Eva) y me sacaste de ese mundo</p>
+                <button onclick="nextQuestion(true, 'question8')">Wall-e 💞</button>
+                <button onclick="nextQuestion(false, 'question1')">Robotín y robotina 😂😂</button>
+            </div>
+            <div class="question" id="question8" style="display: none;">
+                <img src="question8.jpg" alt="Pregunta 8">
+                <p>Luego llego ese día, el viaje, algo tan inesperado sin embargo un día tan hermoso a tu lado gracias por eso! pero aquí va la pregunta ¿quieres más días así?</p>
+                <button onclick="nextQuestion(true, 'question9')">💘 Si</button>
+                <button onclick="nextQuestion(false, 'question1')">⚡ No</button>
+            </div>
+            <div class="question" id="question9" style="display: none;">
+                <img src="question9.jpg" alt="Pregunta 9">
+                <p>Y luego de un pequeño recorrido llegamos a la última pregunta, momentos como estos no se pueden describir porque a tu lado pude vivirlo al máximo por eso para pasar a la última fase ¿quieres inmortalizar estos momentos en nuestros recuerdos por siempre y seguir creando muuuchos más momentos así?</p>
+                <button onclick="nextQuestion(true, 'question10')"> Si. 💐</button>
+                <button onclick="nextQuestion(false, 'question1')"> No, lo siento. 😞</button>
+            </div>
+            <div class="question" id="question10" style="display: none;">
+                <img src="question10.jpg" alt="Pregunta 10">
+                <p>Si llegaste hasta aquí quiero decirte algo que tal ves se me es difícil decírtelo en persona 💘</p>
+                <p>En realidad eres la mejor persona del mundo, tienes un millón de cosas buenas y yo tengo tan poco que ofrecerte más que mi cariño y mi amor sincero, por eso quiero darte aquello que ves arriba y que sabes su significado. TE AMO Y ESO PARA MI NO VA A CAMBIAR!😊</p>
+                <button onclick="location.reload()"> ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥 Tomar mi mano y comvertirte en esa persona para siempre</button>
+            </div>                    
+
+            <div class="question" id="question100" style="display: none;">
+                <p>¿Creíste que no podía hacer algo aunque no nos viéramos?... </p>
+                <button onclick="nextQuestion(true, 'question101')"> Si. 😞😞😞😞😞</button>
+            </div>
+            <div class="question" id="question101" style="display: none;">
+                <img src="flor1.jpg" alt="Pregunta 101">
+                <p>A ver, a ver, a ver... sabes que te amo mucho y no podía quedarme con los brazos cruzados</p>
+                <button onclick="nextQuestion(true, 'question102')"> 🌻🌻🌻🌻🌻🌻🌻🌻🌻</button>
+            </div>
+
+            <div class="question" id="question102" style="display: none;">
+                <img src="flor2.jpg" alt="Pregunta 102">
+                <p>Aunque sé que te mereces mucho más, quiero tener estos momentos en un lugar donde puedas verlo cuando quieras.</p>
+                <button onclick="nextQuestion(true, 'question103')">🌻🌻🌻🌻🌻🌻🌻🌻🌻 </button>
+            </div>
+
+            <div class="question" id="question103" style="display: none;">
+                <img src="paginas1.jpg" alt="Pregunta 104">
+                <p>Como dicen las flores simbolizas la felicidad, y desde que llegaste a mí, mi vida florede de amor y alegreía TE AMO!!!</p>
+                <button onclick="nextQuestion(true, 'question104')"> 🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻</button>
+            </div>  
+
+            <div class="question" id="question104" style="display: none;">
+                <img src="paginas1.jpg" alt="Pregunta 104">
+                <p>Y si no se pudo regalar unas flores amarillas, serán páginas amarillas, ¿no? 😂😂😂</p>
+                <button onclick="nextQuestion(true, 'question105')"> 🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻</button>
+            </div>
+
+            <div class="question" id="question105" style="display: none;">
+                <img src="flor3.jpg" alt="Pregunta 105">
+                <p>Pero ya en serio, lo siento por no poder estar a tu lado.</p>
+                <button onclick="nextQuestion(true, 'question106')"> 🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻</button>
+            </div>
+
+            <div class="question" id="question106" style="display: none;">
+                <img src="flor4.jpg" alt="Pregunta 106">
+                <p>No importa que estemos lejos, porque en tí encontré todo lo que no sabía que necesitaba</p>
+                <button onclick="nextQuestion(true, 'question107')"> 🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻</button>
+            </div>
+
+            <div class="question" id="question107" style="display: none;">
+                <img src="flor5.jpg" alt="Pregunta 107">
+                <p>Toma estas flores como una promesa de amor, como las flores amarillas que bailan con la brisa, nuestro amor es una danza eterna llena de alegría y pasión.</p>
+                <button onclick="nextQuestion(true, 'question108')"> 🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻</button>
+            </div>
+
+            <div class="question" id="question108" style="display: none;">
+                <img src="flor6.png" alt="Pregunta 108">
+                <p>Cada pétalo de estas flores representa un motivo por el que te amo: tu sonrisa, tu ternura, tu compañía... y muchos más.</p>
+                <button onclick="nextQuestion(true, 'question109')"> 🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻🌻</button>
+            </div>
+            <div class="question" id="question109" style="display: none;">
+                <button onclick="window.location.href='https://bmchris18.github.io/song21.github.io/'">
+                    Algo pequeño pero de todo corazón ¡Te amo!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
