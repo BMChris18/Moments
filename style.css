@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    color: red;
+    color: rgb(235, 0, 0);
 }
 
 .question {
@@ -44,7 +44,7 @@ button {
 }
 
 button:hover {
-    background-color: darkred;
+    background-color: rgb(82, 0, 0);
     
 }
 
@@ -68,4 +68,12 @@ button:hover {
     0% { opacity: 1; }
     100% { opacity: 0; }
 }
+.contaimner {
 
+    background: rgba(255, 255, 200, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px solid #FFD700;
+    display: inline-block;
+    margin-top: 30px;
+}
